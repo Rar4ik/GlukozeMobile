@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GlukozeMobile.DoseView"
+             xmlns:resourse="clr-namespace:GlukozeMobile.ViewModel">
+    <ContentView.Resources>
+        <resourse:CalcDoseViewModel x:Key="Dose"/>
+        <Style TargetType="Entry">
+            <Setter Property="FontSize" Value="Medium"/>
+            <Setter Property="FontFamily" Value="Times New Roman"/>
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="Medium"/>
+            <Setter Property="FontFamily" Value="Times New Roman"/>
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+    </ContentView.Resources>
+    <ContentView.Content>
+        <StackLayout BindingContext="{StaticResource Dose}">
+            <Entry x:Name="Mass" Placeholder="Масса тела, г. : " Keyboard="Numeric" 
+                                   Text="{Binding Path=Mass, Mode=OneWayToSource}"/>
+            <Entry x:Name="Speed" Placeholder="Скорость утилизации мг/кг/мин. : " Keyboard="Numeric" 
+                                   Text="{Binding Path=Speed, Mode=OneWayToSource}"/>
+            <Entry x:Name="Enteralno" Placeholder="Кол-во глюкозы энтерально: " Keyboard="Numeric" 
+                                   Text="{Binding Path=Enteralno, Mode=OneWayToSource}"/>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Доза глюкозы, г/сут.:" HorizontalOptions="Start" VerticalOptions="Center"/>
+                <Label x:Name="Dose" Text="{Binding Path=Dose, Mode=OneWay}" FontSize="Large" 
+                       TextColor="ForestGreen" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Доза глюкозы, в.в.:" HorizontalOptions="Start" VerticalOptions="Center"/>
+                <Label x:Name="VVDose" Text="{Binding Path=VVDose, Mode=OneWay}" FontSize="Large" 
+                       TextColor="ForestGreen" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

@@ -1,0 +1,14 @@
+C:\Users\mrava\source\repos\GlukozeMobile\GlukozeMobile\GlukozeMobile\bin\Debug\netstandard2.0\GlukozeMobile.deps.json
+C:\Users\mrava\source\repos\GlukozeMobile\GlukozeMobile\GlukozeMobile\bin\Debug\netstandard2.0\GlukozeMobile.dll
+C:\Users\mrava\source\repos\GlukozeMobile\GlukozeMobile\GlukozeMobile\bin\Debug\netstandard2.0\GlukozeMobile.pdb
+C:\Users\mrava\source\repos\GlukozeMobile\GlukozeMobile\GlukozeMobile\obj\Debug\netstandard2.0\GlukozeMobile.csprojAssemblyReference.cache
+C:\Users\mrava\source\repos\GlukozeMobile\GlukozeMobile\GlukozeMobile\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\mrava\source\repos\GlukozeMobile\GlukozeMobile\GlukozeMobile\obj\Debug\netstandard2.0\GlukozeMobile.csproj.CoreCompileInputs.cache
+C:\Users\mrava\source\repos\GlukozeMobile\GlukozeMobile\GlukozeMobile\obj\Debug\netstandard2.0\GlukozeMobile.AssemblyInfoInputs.cache
+C:\Users\mrava\source\repos\GlukozeMobile\GlukozeMobile\GlukozeMobile\obj\Debug\netstandard2.0\GlukozeMobile.AssemblyInfo.cs
+C:\Users\mrava\source\repos\GlukozeMobile\GlukozeMobile\GlukozeMobile\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\mrava\source\repos\GlukozeMobile\GlukozeMobile\GlukozeMobile\obj\Debug\netstandard2.0\GlukozeMobile.dll
+C:\Users\mrava\source\repos\GlukozeMobile\GlukozeMobile\GlukozeMobile\obj\Debug\netstandard2.0\GlukozeMobile.pdb
+C:\Users\mrava\source\repos\GlukozeMobile\GlukozeMobile\GlukozeMobile\obj\Debug\netstandard2.0\View\ConcentrationView.xaml.g.cs
+C:\Users\mrava\source\repos\GlukozeMobile\GlukozeMobile\GlukozeMobile\obj\Debug\netstandard2.0\View\DoseView.xaml.g.cs
+C:\Users\mrava\source\repos\GlukozeMobile\GlukozeMobile\GlukozeMobile\obj\Debug\netstandard2.0\View\MainPage.xaml.g.cs

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GlukozeMobile.ConcentrationView"             
+             xmlns:resourse="clr-namespace:GlukozeMobile.ViewModel">
+    <ContentView.Resources>
+        <resourse:CaclConcentrationViewModel x:Key="Dose"/>
+        <Style TargetType="Entry">
+            <Setter Property="FontSize" Value="Medium"/>
+            <Setter Property="FontFamily" Value="Oswald"/>
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="Medium"/>
+            <Setter Property="FontFamily" Value="Times New Roman"/>
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+    </ContentView.Resources>
+    <ContentView.Content>
+            <StackLayout BindingContext="{StaticResource Dose}">
+            <Entry Placeholder="V общей глюкозы: " Keyboard="Numeric" Text="{Binding Path=OveralAmount}"/>
+            <Entry Placeholder="% Большей глюкозы: " Keyboard="Numeric" Text="{Binding Path=BiggerCon}"/>
+            <Entry Placeholder="% Меньшей глюкозы: " Keyboard="Numeric" Text="{Binding Path=LesserCon}"/>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="V глюкозы &#10;большей концентрации:" HorizontalOptions="Start" VerticalOptions="Center"/>
+                <Label Text="{Binding Path=BiggerConAmount}" FontSize="Large" TextColor="ForestGreen" 
+                       HorizontalOptions="FillAndExpand" VerticalOptions="End"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="V глюкозы &#10;меньшей концентрации:" HorizontalOptions="Start" VerticalOptions="Center"/>
+                <Label Text="{Binding Path=LesserConAmount}" FontSize="Large" TextColor="ForestGreen" 
+                       HorizontalOptions="FillAndExpand" VerticalOptions="End"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>
